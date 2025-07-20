@@ -15,7 +15,17 @@
 </header>
 
 <nav>
-    <a href="index.html">Inicio</a> <a href="analisis.html">Análisis Geohistóricos</a> <a href="manual.html">Manual de Geoseguridad</a> <a href="herramientas.html">Herramientas de Interés</a> <a href="mapas.html">Mapas Interactivos</a> <a href="blog.html">Blog / Noticias</a> <a href="casos.html">Casos de Estudio</a> <a href="descargas.html">Descargas</a> <a href="contacto.html">Contacto</a> </nav>
+    <nav>
+    <a href="index.html">Inicio</a>
+    <a href="analisis.html">Análisis Geohistóricos</a>
+    <a href="manual.html">Manual de Geoseguridad</a>
+    <a href="herramientas.html">Herramientas de Interés</a>
+    <a href="mapas.html">Mapas Interactivos</a>
+    <a href="blog.html">Blog / Noticias</a>
+    <a href="casos.html">Casos de Estudio</a>
+    <a href="descargas.html">Descargas</a>
+    <a href="contacto.html">Contacto</a>
+</nav> </nav>
 
 <section id="inicio"> <h2>Bienvenidos a Asesoría en Seguridad y Defensa</h2>
     <p class="intro-text">En el corazón de nuestra experiencia como **asesores en seguridad y defensa**, reside una verdad fundamental: la geografía y la historia no son meros telones de fondo, sino fuerzas activas que moldean el poder, el conflicto y la resiliencia. En el campo de la **Geoseguridad**, somos **pioneros** en la fusión de estas disciplinas para desentrañar las claves de la geopolítica contemporánea.</p>

@@ -1,0 +1,145 @@
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
+
+/* Estilos para el encabezado con la imagen de fondo */
+header {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    background-image: url('20250624_175657.jpg');
+    background-size: contain; /* Intenta mostrar la imagen completa */
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 400px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* Opcional: Para mejorar la legibilidad del texto sobre la imagen */
+header h1, header p {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+header h1 {
+    font-size: 2.2em;
+    margin-bottom: 0;
+}
+header p {
+    font-size: 1.8em;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+/* Estilos para el menú superpuesto */
+nav {
+    background: rgba(52, 73, 94, 0.95);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+nav a { 
+    color: white; 
+    padding: 15px 20px;
+    text-decoration: none; 
+    display: block; 
+    transition: background 0.3s ease;
+}
+nav a:hover { background: #2c3e50; }
+
+section { max-width: 1000px; margin: auto; padding: 20px; background: white; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+
+/* Estilos específicos para la sección de introducción/análisis */
+.intro-text {
+    line-height: 1.6;
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 20px;
+}
+.intro-text strong {
+    color: #2c3e50;
+}
+.vision-points {
+    list-style-type: disc;
+    margin-left: 25px;
+    color: #555;
+}
+.vision-points li {
+    margin-bottom: 10px;
+}
+.vision-points li a {
+    color: #34495e;
+    text-decoration: none;
+    font-weight: bold;
+}
+.vision-points li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para el pie de página con la imagen */
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Estilos para el contenido de las páginas secundarias */
+.page-content { 
+    max-width: 1000px; 
+    margin: auto; 
+    padding: 20px; 
+    background: white; 
+    margin-top: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+.page-content h2 { 
+    color: #2c3e50; 
+    margin-bottom: 15px; 
+}
+.page-content p { 
+    line-height: 1.6; 
+    color: #333; 
+    margin-bottom: 15px; 
+}
+.article-summary, .manual-section, .blog-post-summary { /* Estilos para las cajas de contenido */
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.article-summary h3, .manual-section h3, .blog-post-summary h3 { 
+    color: #34495e; 
+    margin-top: 0; 
+}
+.article-summary a, .manual-section a, .blog-post-summary a { 
+    color: #2980b9; 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+.article-summary a:hover, .manual-section a:hover, .blog-post-summary a:hover { 
+    text-decoration: underline; 
+}

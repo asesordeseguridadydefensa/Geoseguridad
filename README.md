@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asesoría en Seguridad y Defensa | Pioneros en Geoseguridad</title> <meta name="description" content="Asesoría en Seguridad y Defensa, Pioneros en Geoseguridad. Liderando la defensa y seguridad a través del análisis geohistórico, inteligencia OSINT y el Manual de Geoseguridad. Expertos en el control territorial y la protección de recursos estratégicos."> <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Asesoría en Seguridad y Defensa | Pioneros en </title> <meta name="description" content="Asesoría en Seguridad y Defensa, Pioneros en Geoseguridad. Liderando la defensa y seguridad a través del análisis geohistórico, inteligencia OSINT y el Manual de Geoseguridad. Expertos en el control territorial y la protección de recursos estratégicos."> <link rel="icon" href="favicon.ico" type="image/x-icon">
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
         

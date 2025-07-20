@@ -2,7 +2,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geoseguridad Pro - Asesoría en Seguridad y Defensa</title> <meta name="description" content="Página sobre Geoseguridad con análisis geohistóricos, manuales y herramientas OSINT para la gestión de seguridad y recursos estratégicos.">
+    <title>Geoseguridad Pro - Asesoría en Seguridad y Defensa</title>
+    <meta name="description" content="Geoseguridad Pro: Liderando la defensa y seguridad a través del análisis geohistórico, inteligencia OSINT y el Manual de Geoseguridad. Expertos pioneros en el control territorial y la protección de recursos estratégicos.">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
@@ -34,8 +35,27 @@
         nav { background: #34495e; display: flex; justify-content: center; flex-wrap: wrap; }
         nav a { color: white; padding: 15px; text-decoration: none; display: block; }
         nav a:hover { background: #2c3e50; }
-        section { max-width: 1000px; margin: auto; padding: 20px; background: white; }
+        section { max-width: 1000px; margin: auto; padding: 20px; background: white; margin-bottom: 20px;} /* Añadido margin-bottom para separar secciones */
         
+        /* Estilos específicos para la sección de introducción/análisis */
+        .intro-text {
+            line-height: 1.6;
+            font-size: 1.1em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .intro-text strong {
+            color: #2c3e50;
+        }
+        .vision-points {
+            list-style-type: disc;
+            margin-left: 25px;
+            color: #555;
+        }
+        .vision-points li {
+            margin-bottom: 10px;
+        }
+
         /* Estilos para el pie de página con la imagen */
         footer {
             background: #2c3e50;
@@ -59,8 +79,8 @@
 <body>
 
 <header>
-    <h1>Manual de Geoseguridad</h1>
-    <p>Análisis, herramientas y recursos de seguridad geoestratégica</p>
+    <h1>Geoseguridad Pro</h1>
+    <p>Asesoría en Seguridad y Defensa | Pioneros en Geoseguridad</p>
 </header>
 
 <nav>
@@ -76,7 +96,17 @@
 
 <section id="analisis">
     <h2>Análisis Geohistóricos</h2>
-    <p>Artículos de análisis geopolítico e histórico desde la perspectiva de la seguridad y recursos estratégicos.</p>
+    <p class="intro-text">En **Geoseguridad Pro**, somos **pioneros** en la fusión de la historia y la geografía para desentrañar las claves de la seguridad y defensa contemporánea. Nuestra experiencia radica en la **Geoseguridad**, una disciplina vital para comprender cómo los factores espaciales y temporales moldean conflictos, protegen recursos y forjan el destino de las naciones.</p>
+    
+    <p class="intro-text">Desde los campos de batalla de la antigüedad hasta las complejidades geoestratégicas del presente, cada evento y cada territorio guardan lecciones invaluables. Nuestro enfoque es dotarle de una visión profunda y predictiva, esencial para la toma de decisiones en un mundo en constante cambio. Abordamos la **seguridad y defensa** no solo desde la perspectiva militar, sino también desde la económica, social y ambiental, reconociendo la interconexión de todos estos factores en el control territorial y la estabilidad regional y global.</p>
+    
+    <p class="intro-text">Nuestra misión es clara:</p>
+    <ul class="vision-points">
+        <li>**Decodificar el pasado:** Identificando patrones geohistóricos que revelan vulnerabilidades y fortalezas.</li>
+        <li>**Entender el presente:** Aplicando inteligencia OSINT y herramientas geoespaciales para un análisis de situación preciso.</li>
+        <li>**Diseñar el futuro:** Desarrollando estrategias de seguridad y defensa proactivas y adaptativas.</li>
+    </ul>
+    <p class="intro-text">Explora nuestros artículos de análisis geopolítico e histórico, donde la perspectiva de la seguridad y los recursos estratégicos son el eje central.</p>
 </section>
 
 <section id="manual">
@@ -111,11 +141,12 @@
 
 <section id="contacto">
     <h2>Contacto</h2>
-    <p>Para colaboraciones o consultas puedes escribir a: <strong>contacto@geoseguridad.org</strong></p>
-</section>
+    <p>Para colaboraciones o consultas puedes escribir a: <strong>asesordeseguridadydefensa@gmail.com</strong></p> </section>
 
 <footer>
-    <img src="pie de pagina.jpg" alt="Logo o eslogan de Geoseguridad Pro"> <p>&copy; 2025 Geoseguridad Pro. Distribuido bajo licencia Creative Commons CC-BY 4.0.</p> </footer>
+    <img src="pie de pagina.jpg" alt="Logo o eslogan de Geoseguridad Pro">
+    <p>&copy; 2025 Geoseguridad Pro. Distribuido bajo licencia Creative Commons CC-BY 4.0.</p>
+</footer>
 
 </body>
 </html>

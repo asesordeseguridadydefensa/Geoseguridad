@@ -3,19 +3,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto | Asesoría en Seguridad y Defensa</title>
-    <meta name="description" content="Contacta con Asesoría en Seguridad y Defensa, Pioneros en Geoseguridad. Estamos disponibles para consultas, colaboraciones y asesoramiento especializado.">
+    <meta name="description" content="Contacta con Asesoría en Seguridad y Defensa, Pioneros en Geoseguridad. Conoce nuestra experiencia y enfoque profesional para consultas, colaboraciones y asesoramiento especializado.">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Estilos específicos para esta página si es necesario */
+        /* Estilos generales para el contenido de las páginas secundarias */
         .page-content { max-width: 1000px; margin: auto; padding: 20px; background: white; margin-top: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
         .page-content h2 { color: #2c3e50; margin-bottom: 15px; }
         .page-content p { line-height: 1.6; color: #333; margin-bottom: 15px; }
+        
+        /* Estilos para la sección de información de contacto */
         .contact-info {
             background: #f9f9f9;
             border: 1px solid #ddd;
             padding: 20px;
             margin-top: 20px;
+            margin-bottom: 20px; /* Espacio debajo del bloque de contacto */
             border-radius: 5px;
             text-align: center;
         }
@@ -31,6 +34,93 @@
         }
         .contact-info a:hover {
             text-decoration: underline;
+        }
+
+        /* Estilos para la sección de biografía */
+        .bio-section {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            display: flex; /* Usamos flexbox para alinear la imagen y el texto */
+            flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+            align-items: flex-start; /* Alinea los elementos al inicio del eje cruzado */
+        }
+        .bio-image-container {
+            flex: 0 0 200px; /* Ancho fijo para la imagen, no crece ni se encoge */
+            margin-right: 20px;
+            text-align: center;
+            margin-bottom: 20px; /* Espacio para móvil si se envuelve */
+        }
+        .bio-image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%; /* Para hacer la imagen circular */
+            border: 3px solid #34495e; /* Borde alrededor de la imagen */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra para resaltar */
+        }
+        .bio-text-content {
+            flex: 1; /* Ocupa el resto del espacio disponible */
+            min-width: 300px; /* Ancho mínimo para el texto antes de envolver */
+        }
+        .bio-section h3 {
+            color: #2c3e50;
+            margin-top: 0; /* Reiniciar margen superior */
+            margin-bottom: 15px;
+        }
+        .bio-section strong {
+            color: #34495e;
+        }
+        .aptitudes-list {
+            list-style-type: none; /* Quitamos los puntos por defecto */
+            padding: 0; /* Quitamos el padding por defecto */
+            margin-left: 0;
+            margin-top: 15px;
+            color: #555;
+            display: flex; /* Para que los ítems se alineen horizontalmente */
+            flex-wrap: wrap; /* Permite que los ítems salten de línea */
+            gap: 10px; /* Espacio entre los "chips" */
+        }
+        .aptitudes-list li {
+            padding: 8px 15px;
+            background-color: #e9ecef;
+            border-radius: 20px; /* Bordes más redondeados para "chips" */
+            font-size: 0.9em;
+            white-space: nowrap; /* Evita que el texto se rompa dentro del chip */
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .social-links {
+            margin-top: 20px;
+            text-align: center; /* Centra los iconos de redes sociales */
+        }
+        .social-links a {
+            display: inline-block;
+            margin: 0 10px;
+            text-decoration: none;
+            color: #34495e; /* Color por defecto para los iconos */
+            font-size: 2em; /* Tamaño grande para los iconos */
+            transition: color 0.3s ease;
+        }
+        .social-links a:hover {
+            color: #2980b9; /* Color al pasar el ratón */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .bio-section {
+                flex-direction: column; /* Apila los elementos en pantallas pequeñas */
+                align-items: center; /* Centra la imagen y el texto apilados */
+            }
+            .bio-image-container {
+                margin-right: 0; /* Elimina el margen derecho */
+            }
+            .bio-text-content {
+                min-width: auto; /* Reinicia el ancho mínimo */
+            }
+            .aptitudes-list {
+                justify-content: center; /* Centra los chips en móvil */
+            }
         }
     </style>
 </head>
@@ -54,17 +144,59 @@
 </nav>
 
 <main class="page-content">
-    <h2>Contacto</h2>
+    <h2>Contacto y Nuestro Enfoque Profesional</h2>
     <p class="intro-text">Estamos a su disposición para cualquier consulta, colaboración o para discutir cómo nuestra asesoría especializada en seguridad y defensa puede beneficiar a su organización o proyecto.</p>
-
-    <p class="intro-text">No dude en ponerse en contacto con nosotros para obtener más información sobre nuestros servicios, el Manual de Geoseguridad, o para explorar oportunidades de cooperación.</p>
 
     <div class="contact-info">
         <h3>Información de Contacto</h3>
         <p>Para consultas generales y colaboraciones, por favor envíenos un correo electrónico a:</p>
         <p><a href="mailto:asesordeseguridadydefensa@gmail.com"><strong>asesordeseguridadydefensa@gmail.com</strong></a></p>
         <p>Nos esforzaremos por responder a su mensaje a la brevedad posible.</p>
+    </div>
+
+    <div class="bio-section">
+        <div class="bio-image-container">
+            <img src="perfil blanco y negro.jpg" alt="Imagen de Perfil Profesional">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/raul-asesordeseguridadydefensa" target="_blank" title="Visita nuestro LinkedIn">
+                    &#xf08c; <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width: 1.2em; height: 1.2em; vertical-align: middle;">
+                        <title>LinkedIn</title>
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.044-1.852-3.044-1.853 0-2.136 1.445-2.136 2.939v5.674H9.289V9.182h3.407v1.561h.045c.451-.863 1.549-1.875 3.391-1.875 3.641 0 4.305 2.393 4.305 5.492v6.235zM3.687 7.185c-1.166 0-2.109-.935-2.109-2.093 0-1.154.943-2.093 2.109-2.093s2.109.939 2.109 2.093c0 1.159-.943 2.093-2.109 2.093zm1.716 13.267H1.971V9.182h3.432v11.27zM22.223 0H1.77C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.77 24h20.453c.978 0 1.77-.773 1.77-1.729V1.729C23.993.774 23.201 0 22.223 0z"/>
+                    </svg>
+                </a>
+                <a href="https://x.com/RTGeoseguridad" target="_blank" title="Visita nuestro X (Twitter)">
+                    &#xf099; <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width: 1.2em; height: 1.2em; vertical-align: middle;">
+                        <title>X (Twitter)</title>
+                        <path d="M18.901 1.144h3.68c.557 0 .825.268.825.825v2.858c0 .557-.268.825-.825.825h-3.68c-.557 0-.825-.268-.825-.825V1.969c0-.557.268-.825.825-.825zm-2.195 1.758c.277 0 .5-.223.5-.5V1.969c0-.277-.223-.5-.5-.5h-1.68c-.277 0-.5.223-.5.5v.433c0 .277.223.5.5.5h1.68zm-5.18 0c.277 0 .5-.223.5-.5V1.969c0-.277-.223-.5-.5-.5H9.845c-.277 0-.5.223-.5.5v.433c0 .277.223.5.5.5h1.68zm-5.18 0c.277 0 .5-.223.5-.5V1.969c0-.277-.223-.5-.5-.5H4.665c-.277 0-.5.223-.5.5v.433c0 .277.223.5.5.5h1.68zm1.96 5.86c.277 0 .5-.223.5-.5V5.578c0-.277-.223-.5-.5-.5h-1.68c-.277 0-.5.223-.5.5v.433c0 .277.223.5.5.5h1.68zm-5.18 0c.277 0 .5-.223.5-.5V5.578c0-.277-.223-.5-.5-.5H4.665c-.277 0-.5.223-.5.5v.433c0 .277.223.5.5.5h1.68zm10.36 0c.277 0 .5-.223.5-.5V5.578c0-.277-.223-.5-.5-.5h-1.68c-.277 0-.5.223-.5.5v.433c0 .277.223.5.5.5h1.68zm-5.18 0c.277 0 .5-.223.5-.5V5.578c0-.277-.223-.5-.5-.5H9.845c-.277 0-.5.223-.5.5v.433c0 .277.223.5.5.5h1.68zm7.34 5.86c.277 0 .5-.223.5-.5V9.598c0-.277-.223-.5-.5-.5h-1.68c-.277 0-.5.223-.5.5v.433c0 .277.223.5.5.5h1.68zm-5.18 0c.277 0 .5-.223.5-.5V9.598c0-.277-.223-.5-.5-.5H9.845c-.277 0-.5.223-.5.5v.433c0 .277.223.5.5.5h1.68zm-5.18 0c.277 0 .5-.223.5-.5V9.598c0-.277-.223-.5-.5-.5H4.665c-.277 0-.5.223-.5.5v.433c0 .277.223.5.5.5h1.68zm10.36 5.86c.277 0 .5-.223.5-.5v-3.98H13.72c-.277 0-.5.223-.5.5v.433c0 .277.223.5.5.5h1.68zm-5.18 0c.277 0 .5-.223.5-.5v-3.98H9.845c-.277 0-.5.223-.5.5v.433c0 .277.223.5.5.5h1.68zm-5.18 0c.277 0 .5-.223.5-.5v-3.98H4.665c-.277 0-.5.223-.5.5v.433c0 .277.223.5.5.5h1.68zm10.36 5.86c.277 0 .5-.223.5-.5v-3.98H13.72c-.277 0-.5.223-.5.5v.433c0 .277.223.5.5.5h1.68zm-5.18 0c.277 0 .5-.223.5-.5v-3.98H9.845c-.277 0-.5.223-.5.5v.433c0 .277.223.5.5.5h1.68zm-5.18 0c.277 0 .5-.223.5-.5v-3.98H4.665c-.277 0-.5.223-.5.5v.433c0 .277.223.5.5.5h1.68z"/>
+                    </svg>
+                </a>
+            </div>
         </div>
+        <div class="bio-text-content">
+            <h3>Nuestro Perfil Profesional</h3>
+            <p>Somos un equipo con una trayectoria sólida y multidisciplinar en **seguridad, gestión de crisis y análisis estratégico**, impulsados por el firme compromiso de salvaguardar la seguridad nacional y económica. Nuestro recorrido abarca desde la gestión operativa de emergencias hasta roles clave en la vigilancia y la inteligencia.</p>
+
+            <p>Con experiencia en la gestión operativa de emergencias como **Jefe de Protección Civil**, hemos desarrollado una robusta capacidad de liderazgo y coordinación en situaciones críticas. Actualmente, nuestra labor como **Funcionarios del Servicio de Vigilancia Aduanera (SVA)** se centra en garantizar el cumplimiento de la legislación aduanera y en la represión del contrabando, con una implicación directa en la lucha contra el blanqueo de capitales y la financiación del terrorismo. Esta labor diaria implica una exhaustiva investigación, inspección y control para proteger nuestras fronteras fiscales y la integridad financiera del país.</p>
+
+            <p>Complementamos esta experiencia con una especialización avanzada en **Análisis de Geoseguridad**, aplicando herramientas geoespaciales de vanguardia para el análisis y la mitigación de riesgos, así como la optimización estratégica de la seguridad. Nuestra formación académica en **Historia y Arqueología (UNED)** y en **Dirección de Seguridad (URJC)**, junto con una especialización técnica naval, nos proporciona una perspectiva única y una capacidad analítica profunda para abordar desafíos complejos desde múltiples ángulos.</p>
+
+            <p>Creemos firmemente en la colaboración interinstitucional y en la aplicación de la inteligencia de datos para la toma de decisiones informadas. Estamos comprometidos con el desarrollo continuo en el ámbito de la seguridad y el análisis geoespacial, buscando siempre nuevas formas de contribuir a un entorno más seguro y resiliente.</p>
+
+            <h4>Aptitudes Clave:</h4>
+            <ul class="aptitudes-list">
+                <li>Análisis de Riesgos Geoespaciales</li>
+                <li>Lucha contra el Fraude y el Contrabando</li>
+                <li>Antilavado de Dinero (AML)</li>
+                <li>Gestión de Crisis</li>
+                <li>Seguridad Nacional</li>
+                <li>Análisis de Datos</li>
+                <li>Inteligencia Fiscal</li>
+                <li>Liderazgo de Equipos</li>
+                <li>Vigilancia Aduanera</li>
+                <li>Lenguas (Inglés, Francés, Árabe)</li>
+            </ul>
+        </div>
+    </div>
 </main>
 
 <footer>

@@ -39,54 +39,54 @@ text-align: right;
 margin-top: 5px;
 }
 
-    /* Estilos para la tabla del glosario */
-    .glossary-table, .maps-table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-bottom: 20px;
-    }
-    .glossary-table th, .glossary-table td,
-    .maps-table th, .maps-table td {
-        border: 1px solid #ddd;
-        padding: 8px;
-        text-align: left;
-    }
-    .glossary-table th, .maps-table th {
-        background-color: #f2f2f2;
-        font-weight: bold;
-    }
-    .glossary-table tr:nth-child(even), .maps-table tr:nth-child(even) {
-        background-color: #f9f9f9;
-    }
-    .glossary-table td:first-child {
-        font-weight: bold;
-    }
+/* Estilos para la tabla del glosario */
+.glossary-table, .maps-table {
+width: 100%;
+border-collapse: collapse;
+margin-bottom: 20px;
+}
+.glossary-table th, .glossary-table td,
+.maps-table th, .maps-table td {
+border: 1px solid #ddd;
+padding: 8px;
+text-align: left;
+}
+.glossary-table th, .maps-table th {
+background-color: #f2f2f2;
+font-weight: bold;
+}
+.glossary-table tr:nth-child(even), .maps-table tr:nth-child(even) {
+background-color: #f9f9f9;
+}
+.glossary-table td:first-child {
+font-weight: bold;
+}
 
-    /* Estilos para la navegación entre capítulos */
-    .chapter-navigation {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 30px;
-        padding-top: 20px;
-        border-top: 1px solid #eee;
-    }
-    .chapter-navigation a {
-        background-color: #34495e;
-        color: white;
-        padding: 10px 15px;
-        text-decoration: none;
-        border-radius: 5px;
-        transition: background-color 0.3s ease;
-    }
-    .chapter-navigation a:hover {
-        background-color: #2c3e50;
-    }
-    .chapter-navigation .nav-prev { /* Alineación para "Anterior" */
-        margin-right: auto;
-    }
-    .chapter-navigation .nav-next { /* Alineación para "Siguiente" */
-        margin-left: auto;
-    }
+/* Estilos para la navegación entre capítulos /
+.chapter-navigation {
+display: flex;
+justify-content: space-between;
+margin-top: 30px;
+padding-top: 20px;
+border-top: 1px solid #eee;
+}
+.chapter-navigation a {
+background-color: #34495e;
+color: white;
+padding: 10px 15px;
+text-decoration: none;
+border-radius: 5px;
+transition: background-color 0.3s ease;
+}
+.chapter-navigation a:hover {
+background-color: #2c3e50;
+}
+.chapter-navigation .nav-prev { / Alineación para "Anterior" /
+margin-right: auto;
+}
+.chapter-navigation .nav-next { / Alineación para "Siguiente" */
+margin-left: auto;
+}
 </style>
 
 </head>
@@ -116,272 +116,272 @@ margin-top: 5px;
 <p>Los siguientes anexos proporcionan recursos prácticos y de referencia para los profesionales y equipos que implementan la Geoseguridad.</p>
 
 <section>
-    <h4>10.1. Glosario Multilingüe de Términos Clave en Geoseguridad</h4>
-    <p>Este glosario facilita la comunicación y la comprensión de los conceptos de Geoseguridad en un contexto internacional y multidisciplinar.</p>
+<h4>10.1. Glosario Multilingüe de Términos Clave en Geoseguridad</h4>
+<p>Este glosario facilita la comunicación y la comprensión de los conceptos de Geoseguridad en un contexto internacional y multidisciplinar.</p>
 
-    <table class="glossary-table">
-        <thead>
-            <tr>
-                <th>Término Español</th>
-                <th>Inglés</th>
-                <th>Francés</th>
-                <th>Ruso</th>
-                <th>Chino</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Seguridad física</td>
-                <td>Physical security</td>
-                <td>Sécurité physique</td>
-                <td>Физическая безопасность</td>
-                <td>物理安全</td>
-            </tr>
-            <tr>
-                <td>Análisis SIG</td>
-                <td>GIS analysis</td>
-                <td>Analyse SIG</td>
-                <td>Геоинформационный анализ</td>
-                <td>地理信息系统分析</td>
-            </tr>
-            <tr>
-                <td>Ciberataque</td>
-                <td>Cyberattack</td>
-                <td>Cyberattaque</td>
-                <td>Кибератака</td>
-                <td>网络攻击</td>
-            </tr>
-            <tr>
-                <td>Geoseguridad</td>
-                <td>Geosecurity</td>
-                <td>Géosécurité</td>
-                <td>Геобезопасность</td>
-                <td>地理安全</td>
-            </tr>
-            <tr>
-                <td>Inteligencia de fuentes abiertas</td>
-                <td>Open Source Intelligence</td>
-                <td>Renseignement de sources ouvertes</td>
-                <td>Разведка по открытым источникам</td>
-                <td>开源情报</td>
-            </tr>
-            <tr>
-                <td>Inteligencia de imágenes</td>
-                <td>Imagery Intelligence</td>
-                <td>Renseignement d'imagerie</td>
-                <td>Разведка по изображениям</td>
-                <td>图像情报</td>
-            </tr>
-            <tr>
-                <td>Gestión de riesgos</td>
-                <td>Risk management</td>
-                <td>Gestion des risques</td>
-                <td>Управление рисками</td>
-                <td>风险管理</td>
-            </tr>
-            <tr>
-                <td>Infraestructura crítica</td>
-                <td>Critical infrastructure</td>
-                <td>Infrastructure critique</td>
-                <td>Критическая инфраструктура</td>
-                <td>关键基础设施</td>
-            </tr>
-            <tr>
-                <td>Resiliencia</td>
-                <td>Resilience</td>
-                <td>Résilience</td>
-                <td>Устойчивость</td>
-                <td>韧性</td>
-            </tr>
-            <tr>
-                <td>Geopolítica</td>
-                <td>Geopolitics</td>
-                <td>Géopolitique</td>
-                <td>Геополитика</td>
-                <td>地缘政治</td>
-            </tr>
-            <tr>
-                <td>Geoestrategia</td>
-                <td>Geostrategy</td>
-                <td>Géostratégie</td>
-                <td>Геостратегия</td>
-                <td>地缘战略</td>
-            </tr>
-            <tr>
-                <td>Geohistoria</td>
-                <td>Geohistory</td>
-                <td>Géohistoire</td>
-                <td>Геоистория</td>
-                <td>地理历史</td>
-            </tr>
-            <tr>
-                <td>Gemelo Digital</td>
-                <td>Digital Twin</td>
-                <td>Jumeau numérique</td>
-                <td>Цифровой двойник</td>
-                <td>数字孪生</td>
-            </tr>
-            <tr>
-                <td>Geofencing</td>
-                <td>Geofencing</td>
-                <td>Géorepérage</td>
-                <td>Геозонирование</td>
-                <td>地理围栏</td>
-            </tr>
-            <tr>
-                <td>IA Predictiva</td>
-                <td>Predictive AI</td>
-                <td>IA prédictive</td>
-                <td>Прогнозирующий ИИ</td>
-                <td>预测性人工智能</td>
-            </tr>
-            <tr>
-                <td>Amenaza Híbrida</td>
-                <td>Hybrid Threat</td>
-                <td>Menace hybride</td>
-                <td>Гибридная угроза</td>
-                <td>混合威胁</td>
-            </tr>
-            <tr>
-                <td>Desastre Natural</td>
-                <td>Natural Disaster</td>
-                <td>Catastrophe naturelle</td>
-                <td>Стихийное бедствие</td>
-                <td>自然灾害</td>
-            </tr>
-            <tr>
-                <td>Cadena de Suministro</td>
-                <td>Supply Chain</td>
-                <td>Chaîne d'approvisionnement</td>
-                <td>Цепочка поставок</td>
-                <td>供应链</td>
-            </tr>
-            <tr>
-                <td>Análisis de Vulnerabilidades</td>
-                <td>Vulnerability Analysis</td>
-                <td>Analyse de vulnérabilités</td>
-                <td>Анализ уязвимостей</td>
-                <td>脆弱性分析</td>
-            </tr>
-            <tr>
-                <td>Mapeo de Riesgos</td>
-                <td>Risk Mapping</td>
-                <td>Cartographie des risques</td>
-                <td>Картирование рисков</td>
-                <td>风险映射</td>
-            </tr>
-            <tr>
-                <td>Alerta Temprana</td>
-                <td>Early Warning</td>
-                <td>Alerte précoce</td>
-                <td>Система раннего оповещения</td>
-                <td>预警</td>
-            </tr>
-        </tbody>
-    </table>
+<table class="glossary-table">
+    <thead>
+        <tr>
+            <th>Término Español</th>
+            <th>Inglés</th>
+            <th>Francés</th>
+            <th>Ruso</th>
+            <th>Chino</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Seguridad física</td>
+            <td>Physical security</td>
+            <td>Sécurité physique</td>
+            <td>Физическая безопасность</td>
+            <td>物理安全</td>
+        </tr>
+        <tr>
+            <td>Análisis SIG</td>
+            <td>GIS analysis</td>
+            <td>Analyse SIG</td>
+            <td>Геоинформационный анализ</td>
+            <td>地理信息系统分析</td>
+        </tr>
+        <tr>
+            <td>Ciberataque</td>
+            <td>Cyberattack</td>
+            <td>Cyberattaque</td>
+            <td>Кибератака</td>
+            <td>网络攻击</td>
+        </tr>
+        <tr>
+            <td>Geoseguridad</td>
+            <td>Geosecurity</td>
+            <td>Géosécurité</td>
+            <td>Геобезопасность</td>
+            <td>地理安全</td>
+        </tr>
+        <tr>
+            <td>Inteligencia de fuentes abiertas</td>
+            <td>Open Source Intelligence</td>
+            <td>Renseignement de sources ouvertes</td>
+            <td>Разведка по открытым источникам</td>
+            <td>开源情报</td>
+        </tr>
+        <tr>
+            <td>Inteligencia de imágenes</td>
+            <td>Imagery Intelligence</td>
+            <td>Renseignement d'imagerie</td>
+            <td>Разведка по изображениям</td>
+            <td>图像情报</td>
+        </tr>
+        <tr>
+            <td>Gestión de riesgos</td>
+            <td>Risk management</td>
+            <td>Gestion des risques</td>
+            <td>Управление рисками</td>
+            <td>风险管理</td>
+        </tr>
+        <tr>
+            <td>Infraestructura crítica</td>
+            <td>Critical infrastructure</td>
+            <td>Infrastructure critique</td>
+            <td>Критическая инфраструктура</td>
+            <td>关键基础设施</td>
+        </tr>
+        <tr>
+            <td>Resiliencia</td>
+            <td>Resilience</td>
+            <td>Résilience</td>
+            <td>Устойчивость</td>
+            <td>韧性</td>
+        </tr>
+        <tr>
+            <td>Geopolítica</td>
+            <td>Geopolitics</td>
+            <td>Géopolitique</td>
+            <td>Геополитика</td>
+            <td>地缘政治</td>
+        </tr>
+        <tr>
+            <td>Geoestrategia</td>
+            <td>Geostrategy</td>
+            <td>Géostratégie</td>
+            <td>Геостратегия</td>
+            <td>地缘战略</td>
+        </tr>
+        <tr>
+            <td>Geohistoria</td>
+            <td>Geohistory</td>
+            <td>Géohistoire</td>
+            <td>Геоистория</td>
+            <td>地理历史</td>
+        </tr>
+        <tr>
+            <td>Gemelo Digital</td>
+            <td>Digital Twin</td>
+            <td>Jumeau numérique</td>
+            <td>Цифровой двойник</td>
+            <td>数字孪生</td>
+        </tr>
+        <tr>
+            <td>Geofencing</td>
+            <td>Geofencing</td>
+            <td>Géorepérage</td>
+            <td>Геозонирование</td>
+            <td>地理围栏</td>
+        </tr>
+        <tr>
+            <td>IA Predictiva</td>
+            <td>Predictive AI</td>
+            <td>IA prédictive</td>
+            <td>Прогнозирующий ИИ</td>
+            <td>预测性人工智能</td>
+        </tr>
+        <tr>
+            <td>Amenaza Híbrida</td>
+            <td>Hybrid Threat</td>
+            <td>Menace hybride</td>
+            <td>Гибридная угроза</td>
+            <td>混合威胁</td>
+        </tr>
+        <tr>
+            <td>Desastre Natural</td>
+            <td>Natural Disaster</td>
+            <td>Catastrophe naturelle</td>
+            <td>Стихийное бедствие</td>
+            <td>自然灾害</td>
+        </tr>
+        <tr>
+            <td>Cadena de Suministro</td>
+            <td>Supply Chain</td>
+            <td>Chaîne d'approvisionnement</td>
+            <td>Цепочка поставок</td>
+            <td>供应链</td>
+        </tr>
+        <tr>
+            <td>Análisis de Vulnerabilidades</td>
+            <td>Vulnerability Analysis</td>
+            <td>Analyse de vulnérabilités</td>
+            <td>Анализ уязвимостей</td>
+            <td>脆弱性分析</td>
+        </tr>
+        <tr>
+            <td>Mapeo de Riesgos</td>
+            <td>Risk Mapping</td>
+            <td>Cartographie des risques</td>
+            <td>Картирование рисков</td>
+            <td>风险映射</td>
+        </tr>
+        <tr>
+            <td>Alerta Temprana</td>
+            <td>Early Warning</td>
+            <td>Alerte précoce</td>
+            <td>Система раннего оповещения</td>
+            <td>预警</td>
+        </tr>
+    </tbody>
+</table>
+
 </section>
 
 <section>
-    <h4>10.2. Mapas Estratégicos Esenciales</h4>
-    <p>Para una comprensión visual de los desafíos de Geoseguridad, se recomiendan los siguientes tipos de mapas estratégicos, que deben ser desarrollados y mantenidos actualizados mediante el uso de Sistemas de Información Geográfica (SIG).</p>
+<h4>10.2. Mapas Estratégicos Esenciales</h4>
+<p>Para una comprensión visual de los desafíos de Geoseguridad, se recomiendan los siguientes tipos de mapas estratégicos, que deben ser desarrollados y mantenidos actualizados mediante el uso de Sistemas de Información Geográfica (SIG).</p>
 
-    <!-- Imagen para la sección de mapas estratégicos -->
-    <img src="img/cap 10.0.png" alt="Ejemplos de Mapas Estratégicos Esenciales">
-    <p class="image-caption">Visualización de diferentes tipos de mapas estratégicos para Geoseguridad.</p>
+<!-- La imagen y su descripción iniciales han sido eliminadas según tu solicitud. -->
 
-    <h5>Mapa: Infraestructuras Críticas Mundiales.</h5>
-    <ul>
-        <li><strong>Descripción:</strong> Representación global de las infraestructuras vitales (energía, transporte, comunicaciones, agua, sanidad) y su interconexión. Este mapa debe identificar nodos clave, puntos de falla potenciales y su vulnerabilidad geográfica a diversas amenazas. Idealmente, debería incluir capas que muestren la propiedad y el control de estas infraestructuras.</li>
-        <li><strong>Ejemplos:</strong>
-            <ol>
-                <li>Global Infrastructure Map – Banco Mundial: Mapa interactivo que incluye más de 55 capas (energía, transporte, telecomunicaciones, agua, salud) y destaca puntos críticos como plantas, cables submarinos, puertos y autopistas.</li>
-                <li>Critical Infrastructure Spatial Index (CISI): Visualiza la densidad de infraestructura en escala global. Ofrece un índice cuantitativo (0‑1) de intensidad, destacando Europa occidental y costa este de EE.UU.</li>
-                <li>Google Earth Engine – CISI en formato geoespacial: Mapa de base limpio con niveles de intensidad de infraestructuras, apto para análisis con datos en grillas y extracción en QGIS.</li>
-                <li>Global Infrastructure Map – Boston University: Mapa temático que muestra regionales claves con clasificación por tipo de infraestructura y criticidad.</li>
-            </ol>
-        </li>
-    </ul>
+<h5>Mapa: Infraestructuras Críticas Mundiales.</h5>
+<ul>
+    <li><strong>Descripción:</strong> Representación global de las infraestructuras vitales (energía, transporte, comunicaciones, agua, sanidad) y su interconexión. Este mapa debe identificar nodos clave, puntos de falla potenciales y su vulnerabilidad geográfica a diversas amenazas. Idealmente, debería incluir capas que muestren la propiedad y el control de estas infraestructuras.</li>
+    <li><strong>Ejemplos:</strong>
+        <ol>
+            <li><img src="img/cap 10.0.png" alt="Mapa de Infraestructura Global - Banco Mundial"><br>Global Infrastructure Map – Banco Mundial: Mapa interactivo que incluye más de 55 capas (energía, transporte, telecomunicaciones, agua, salud) y destaca puntos críticos como plantas, cables submarinos, puertos y autopistas.</li>
+            <li><img src="img/cap 10.1.png" alt="Critical Infrastructure Spatial Index (CISI)"><br>Critical Infrastructure Spatial Index (CISI): Visualiza la densidad de infraestructura en escala global. Ofrece un índice cuantitativo (0‑1) de intensidad, destacando Europa occidental y costa este de EE.UU.</li>
+            <li><img src="img/cap 10.2.png" alt="Google Earth Engine – CISI en formato geoespacial"><br>Google Earth Engine – CISI en formato geoespacial: Mapa de base limpio con niveles de intensidad de infraestructuras, apto para análisis con datos en grillas y extracción en QGIS.</li>
+            <li><img src="img/cap 10.3.png" alt="Global Infrastructure Map – Boston University"><br>Global Infrastructure Map – Boston University: Mapa temático que muestra regionales claves con clasificación por tipo de infraestructura y criticidad.</li>
+        </ol>
+    </li>
+</ul>
 
-    <h5>Mapa: Corredores Logísticos Globales.</h5>
-    <ul>
-        <li><strong>Descripción:</strong> Ilustración de las principales rutas marítimas, terrestres y aéreas que sustentan el comercio y la movilidad global. Este mapa ayuda a identificar "cuellos de botella" geográficos (como estrechos marítimos o pasos de montaña), riesgos de interrupción de la cadena de suministro y puntos vulnerables a la piratería, el contrabando o el terrorismo.</li>
-        <li><strong>Ejemplos:</strong>
-            <ol>
-                <li>Global Major Sea Routes — “Motorways of the Sea”: Mapa en inglés mostrando las principales rutas marítimas intercontinentales, incluyendo estrechos críticos como Malaca, Hormuz y Bab el-Mandeb.</li>
-                <li>Shipping Routes + Chokepoints: Ilustración académica con rutas marítimas principales y zonas sombreadas de navegación profunda, útil para identificar pasos estratégicos.</li>
-                <li>Visualización de flujos comerciales (Vox / shipmap.org): Mapa de densidad de tráfico marítimo por tipo de buque (contenedores, petroleros, graneleros).</li>
-                <li>Shipping at a Turning Point: Mapa en azul claro que marca rutas principales, focos de congestión y posibles redirecciones por cambio climático.</li>
-            </ol>
-        </li>
-    </ul>
+<h5>Mapa: Corredores Logísticos Globales.</h5>
+<ul>
+    <li><strong>Descripción:</strong> Ilustración de las principales rutas marítimas, terrestres y aéreas que sustentan el comercio y la movilidad global. Este mapa ayuda a identificar "cuellos de botella" geográficos (como estrechos marítimos o pasos de montaña), riesgos de interrupción de la cadena de suministro y puntos vulnerables a la piratería, el contrabando o el terrorismo.</li>
+    <li><strong>Ejemplos:</strong>
+        <ol>
+            <li><img src="img/cap 10.4.png" alt="Global Major Sea Routes — “Motorways of the Sea”"><br>Global Major Sea Routes — “Motorways of the Sea”: Mapa en inglés mostrando las principales rutas marítimas intercontinentales, incluyendo estrechos críticos como Malaca, Hormuz y Bab el-Mandeb.</li>
+            <li><img src="img/cap 10.5.png" alt="Shipping Routes + Chokepoints"><br>Shipping Routes + Chokepoints: Ilustración académica con rutas marítimas principales y zonas sombreadas de navegación profunda, útil para identificar pasos estratégicos.</li>
+            <li><img src="img/cap 10.6.png" alt="Visualización de flujos comerciales (Vox / shipmap.org)"><br>Visualización de flujos comerciales (Vox / shipmap.org): Mapa de densidad de tráfico marítimo por tipo de buque (contenedores, petroleros, graneleros).</li>
+            <li><img src="img/cap 10.7.png" alt="Shipping at a Turning Point"><br>Shipping at a Turning Point: Mapa en azul claro que marca rutas principales, focos de congestión y posibles redirecciones por cambio climático.</li>
+        </ol>
+    </li>
+</ul>
 
-    <h5>Mapa: Puntos Calientes de Conflicto 2024.</h5>
-    <ul>
-        <li><strong>Descripción:</strong> Un mapa dinámico que muestre las regiones geográficas con alta intensidad de conflicto armado, inestabilidad política, actividad terrorista o tensiones geopolíticas significativas. Debería incluir capas de densidad de incidentes, movimientos de fuerzas y áreas bajo control de diferentes actores, utilizando datos de plataformas como ACLED.</li>
-        <li><strong>Ejemplos:</strong>
-            <ol>
-                <li>Mapa de densidad de infraestructuras críticas globales (colores rojo‑azul), muestra zonas con mayor concentración de activos como puertos, centrales y redes.</li>
-                <li>Mapa Global de Ciberriesgo a todo color, desarrollada por Neptune P2P Group. Visualmente, representa un mapamundi donde se resaltan distintas zonas de amenaza de seguridad, tanto marítimas como terrestres.</li>
-                <li>Mapa del mercado de protección de infraestructuras con regiones diferenciadas por tipo de protección instrumento.</li>
-                <li>Mapa geopolítico-digital con flujos y nodos, útil para transmitir interconexión y vulnerabilidad.</li>
-            </ol>
-        </li>
-    </ul>
+<h5>Mapa: Puntos Calientes de Conflicto 2024.</h5>
+<ul>
+    <li><strong>Descripción:</strong> Un mapa dinámico que muestre las regiones geográficas con alta intensidad de conflicto armado, inestabilidad política, actividad terrorista o tensiones geopolíticas significativas. Debería incluir capas de densidad de incidentes, movimientos de fuerzas y áreas bajo control de diferentes actores, utilizando datos de plataformas como ACLED.</li>
+    <li><strong>Ejemplos:</strong>
+        <ol>
+            <li><img src="img/cap 10.8.png" alt="Mapa de densidad de infraestructuras críticas globales"><br>Mapa de densidad de infraestructuras críticas globales (colores rojo‑azul), muestra zonas con mayor concentración de activos como puertos, centrales y redes.</li>
+            <li><img src="img/cap 10.9.png" alt="Mapa Global de Ciberriesgo - Neptune P2P Group"><br>Mapa Global de Ciberriesgo a todo color, desarrollada por Neptune P2P Group. Visualmente, representa un mapamundi donde se resaltan distintas zonas de amenaza de seguridad, tanto marítimas como terrestres.</li>
+            <li><img src="img/cap 10.10.png" alt="Mapa del mercado de protección de infraestructuras"><br>Mapa del mercado de protección de infraestructuras con regiones diferenciadas por tipo de protección instrumento.</li>
+            <li><img src="img/cap 10.11.png" alt="Mapa geopolítico-digital con flujos y nodos"><br>Mapa geopolítico-digital con flujos y nodos, útil para transmitir interconexión y vulnerabilidad.</li>
+        </ol>
+    </li>
+</ul>
+
 </section>
 
 <section>
-    <h4>10.3. Checklist de Evaluación Geosegura</h4>
-    <p>Esta lista de verificación proporciona un marco para evaluar la postura de Geoseguridad de un activo, una infraestructura o un territorio específico.</p>
-    <ul>
-        <li><strong>Mapeo Completo de Infraestructuras Críticas:</strong>
-            <ul>
-                <li>¿Se han identificado y georreferenciado todos los activos físicos y digitales críticos dentro del área de interés?</li>
-                <li>¿Se han mapeado sus interdependencias (ej., la planta de energía que alimenta la torre de telecomunicaciones)?</li>
-            </ul>
-        </li>
-        <li><strong>Análisis Histórico de Amenazas en la Zona:</strong>
-            <ul>
-                <li>¿Se han estudiado los patrones históricos de desastres naturales, conflictos, actividad criminal o vulnerabilidades socioeconómicas en la región?</li>
-                <li>¿Se ha evaluado cómo estos patrones históricos podrían influir en las amenazas actuales y futuras?</li>
-            </ul>
-        </li>
-        <li><strong>Protocolos de Respuesta ante Ciberataques con Impacto Geográfico:</strong>
-            <ul>
-                <li>¿Existen planes específicos para responder a ciberataques que puedan afectar infraestructuras físicas o la capacidad de operar en un área determinada?</li>
-                <li>¿Se han simulado estos protocolos en un entorno de Gemelo Digital o mediante ejercicios de mesa?</li>
-            </ul>
-        </li>
-        <li><strong>Sistemas de Monitoreo en Tiempo Real (GEOINT/OSINT):</strong>
-            <ul>
-                <li>¿Se utilizan plataformas y herramientas para recopilar y analizar datos geoespaciales y de fuentes abiertas en tiempo real (ej., GDACS, ACLED, redes sociales)?</li>
-                <li>¿Están configuradas las alertas para detectar anomalías o incidentes en áreas críticas?</li>
-            </ul>
-        </li>
-        <li><strong>Plan de Continuidad de Operaciones (con Enfoque Geográfico):</strong>
-            <ul>
-                <li>¿Existe un plan detallado para mantener las operaciones críticas en caso de interrupción causada por eventos geográficos (desastres naturales, conflictos) o ciberataques con impacto espacial?</li>
-                <li>¿Incluye el plan rutas de suministro alternativas, ubicaciones de respaldo geográficamente dispersas y protocolos de comunicación redundantes?</li>
-            </ul>
-        </li>
-        <li><strong>Evaluación de Geofencing Ético:</strong>
-            <ul>
-                <li>Si se utiliza geofencing, ¿se cumplen los requisitos éticos y de privacidad de datos?</li>
-                <li>¿Existe una política clara sobre el uso, la recopilación y el almacenamiento de datos de ubicación?</li>
-            </ul>
-        </li>
-        <li><strong>Integración de IA Predictiva:</strong>
-            <ul>
-                <li>¿Se están explorando o implementando soluciones de IA para predecir riesgos geográficos o de seguridad?</li>
-                <li>¿Cómo se validan y se integran estas predicciones en el proceso de toma de decisiones?</li>
-            </ul>
-        </li>
-    </ul>
+<h4>10.3. Checklist de Evaluación Geosegura</h4>
+<p>Esta lista de verificación proporciona un marco para evaluar la postura de Geoseguridad de un activo, una infraestructura o un territorio específico.</p>
+<ul>
+<li><strong>Mapeo Completo de Infraestructuras Críticas:</strong>
+<ul>
+<li>¿Se han identificado y georreferenciado todos los activos físicos y digitales críticos dentro del área de interés?</li>
+<li>¿Se han mapeado sus interdependencias (ej., la planta de energía que alimenta la torre de telecomunicaciones)?</li>
+</ul>
+</li>
+<li><strong>Análisis Histórico de Amenazas en la Zona:</strong>
+<ul>
+<li>¿Se han estudiado los patrones históricos de desastres naturales, conflictos, actividad criminal o vulnerabilidades socioeconómicas en la región?</li>
+<li>¿Se ha evaluado cómo estos patrones históricos podrían influir en las amenazas actuales y futuras?</li>
+</ul>
+</li>
+<li><strong>Protocolos de Respuesta ante Ciberataques con Impacto Geográfico:</strong>
+<ul>
+<li>¿Existen planes específicos para responder a ciberataques que puedan afectar infraestructuras físicas o la capacidad de operar en un área determinada?</li>
+<li>¿Se han simulado estos protocolos en un entorno de Gemelo Digital o mediante ejercicios de mesa?</li>
+</ul>
+</li>
+<li><strong>Sistemas de Monitoreo en Tiempo Real (GEOINT/OSINT):</strong>
+<ul>
+<li>¿Se utilizan plataformas y herramientas para recopilar y analizar datos geoespaciales y de fuentes abiertas en tiempo real (ej., GDACS, ACLED, redes sociales)?</li>
+<li>¿Están configuradas las alertas para detectar anomalías o incidentes en áreas críticas?</li>
+</ul>
+</li>
+<li><strong>Plan de Continuidad de Operaciones (con Enfoque Geográfico):</strong>
+<ul>
+<li>¿Existe un plan detallado para mantener las operaciones críticas en caso de interrupción causada por eventos geográficos (desastres naturales, conflictos) o ciberataques con impacto espacial?</li>
+<li>¿Incluye el plan rutas de suministro alternativas, ubicaciones de respaldo geográficamente dispersas y protocolos de comunicación redundantes?</li>
+</ul>
+</li>
+<li><strong>Evaluación de Geofencing Ético:</strong>
+<ul>
+<li>Si se utiliza geofencing, ¿se cumplen los requisitos éticos y de privacidad de datos?</li>
+<li>¿Existe una política clara sobre el uso, la recopilación y el almacenamiento de datos de ubicación?</li>
+</ul>
+</li>
+<li><strong>Integración de IA Predictiva:</strong>
+<ul>
+<li>¿Se están explorando o implementando soluciones de IA para predecir riesgos geográficos o de seguridad?</li>
+<li>¿Cómo se validan y se integran estas predicciones en el proceso de toma de decisiones?</li>
+</ul>
+</li>
+</ul>
 </section>
 
 <div class="chapter-navigation">
-    <a href="manual-capitulo9.html" class="nav-prev">&larr; Capítulo Anterior</a>
-    <a href="manual.html">Volver al Índice del Manual</a>
-    <!-- Este es el último capítulo, no hay "Siguiente" -->
+<a href="manual-capitulo9.html" class="nav-prev">&larr; Capítulo Anterior</a>
+<a href="manual.html">Volver al Índice del Manual</a>
+<!-- Este es el último capítulo, no hay "Siguiente" -->
 </div>
 
 </main>

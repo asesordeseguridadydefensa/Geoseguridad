@@ -215,7 +215,7 @@
     // API Configuration
     // Si estás ejecutando esto localmente, debes introducir tu propia clave de API aquí.
     // En el entorno de Canvas, esta variable se rellenará automáticamente.
-    const apiKey = "AIzaSyAM31HHGU2fTB4fhxqN3P9GCYCTDsRr1mI";
+    const apiKey = "AIzaSyBzg26omBBOl5J57pbs-cHwpLoZKy2wvNs";
     const modelUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
 
     // Utility function for exponential backoff retry logic
@@ -235,6 +235,11 @@
             }
             throw error;
         }
+    };
+
+    // Helper function to format text with line breaks
+    const formatTextToHtml = (text) => {
+        return text.replace(/\n/g, '<br>');
     };
 
     // Main function to generate the report
@@ -333,15 +338,15 @@
                 result.candidates[0].content && result.candidates[0].content.parts &&
                 result.candidates[0].content.parts.length > 0) {
                 const generatedText = result.candidates[0].content.parts[0].text;
-                reportContent.innerText = generatedText;
+                reportContent.innerHTML = formatTextToHtml(generatedText);
                 reportOutput.classList.remove('hidden');
             } else {
-                reportContent.innerText = "Error: No se pudo generar el informe. Por favor, revisa tus datos e inténtalo de nuevo.";
+                reportContent.innerHTML = "Error: No se pudo generar el informe. Por favor, revisa tus datos e inténtalo de nuevo.";
                 reportOutput.classList.remove('hidden');
             }
         } catch (error) {
             console.error("Error al generar el informe:", error);
-            reportContent.innerText = `Error: Ha ocurrido un fallo en la conexión con la API. Posiblemente la clave de la API no es válida o hay un problema de red. Por favor, revisa e inténtalo de nuevo más tarde. (Detalle: ${error.message})`;
+            reportContent.innerHTML = `Error: Ha ocurrido un fallo en la conexión con la API. Posiblemente la clave de la API no es válida o hay un problema de red. Por favor, revisa e inténtalo de nuevo más tarde. (Detalle: ${error.message})`;
             reportOutput.classList.remove('hidden');
             
         } finally {

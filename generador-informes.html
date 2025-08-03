@@ -213,7 +213,9 @@
 
 <script>
     // API Configuration
-    const apiKey = "";
+    // Si estás ejecutando esto localmente, debes introducir tu propia clave de API aquí.
+    // En el entorno de Canvas, esta variable se rellenará automáticamente.
+    const apiKey = "AIzaSyAM31HHGU2fTB4fhxqN3P9GCYCTDsRr1mI";
     const modelUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
 
     // Utility function for exponential backoff retry logic
@@ -237,6 +239,22 @@
 
     // Main function to generate the report
     const generateReport = async () => {
+        // Validación de la clave de API antes de la llamada
+        if (!apiKey) {
+            const messageBox = document.createElement('div');
+            messageBox.className = 'fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-75 z-50';
+            messageBox.innerHTML = `
+                <div class="bg-gray-900 p-6 rounded-lg shadow-lg text-white max-w-sm">
+                    <p>Error: Falta la clave de la API. Por favor, asegúrate de que tu clave de API esté configurada correctamente. Si estás fuera del entorno de Canvas, necesitas añadirla manualmente.</p>
+                    <div class="mt-4 text-right">
+                        <button class="bg-cyan-500 text-black px-4 py-2 rounded-md" onclick="this.parentNode.parentNode.parentNode.remove()">OK</button>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(messageBox);
+            return;
+        }
+
         const data = {
             titulo: document.getElementById('tituloInforme').value,
             clasificacion: document.getElementById('clasificacionSeguridad').value,
@@ -325,6 +343,7 @@
             console.error("Error al generar el informe:", error);
             reportContent.innerText = `Error: Ha ocurrido un fallo en la conexión con la API. Posiblemente la clave de la API no es válida o hay un problema de red. Por favor, revisa e inténtalo de nuevo más tarde. (Detalle: ${error.message})`;
             reportOutput.classList.remove('hidden');
+            
         } finally {
             loadingIndicator.classList.add('hidden');
             window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });

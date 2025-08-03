@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Informes Tácticos | Asesoría en Seguridad y Defensa</title>
+    <meta name="description" content="Herramienta interactiva para generar informes tácticos detallados de 12 puntos, con un enfoque en seguridad y defensa.">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Carga de fuentes y estilos para toda la web -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Carga de Tailwind y Font Awesome para la aplicación de informes -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <h1>Asesoría en Seguridad y Defensa</h1>
+    <p>Pioneros</p>
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="analisis.html">Análisis Geohistóricos</a>
+    <a href="manual.html">Manual de Geoseguridad</a>
+    <a href="herramientas.html">Herramientas de Interés</a>
+    <a href="mapas.html">Mapas Interactivos</a>
+    <a href="blog.html">Blog / Noticias</a>
+    <a href="casos.html">Casos de Estudio</a>
+    <a href="descargas.html">Descargas</a>
+    <a href="contacto.html">Contacto</a>
+</nav>
+
+<main class="page-content">
+    <!-- Inicio de la aplicación del generador de informes -->
+    <section class="app-card mb-8">
+        <header class="text-center mb-6">
+            <h1 class="text-3xl md:text-4xl font-bold tracking-tight text-white">GENERADOR DE INFORMES TÁCTICOS</h1>
+            <p class="text-md text-white mt-2">Plantilla Detallada (12 Puntos)</p>
+        </header>
+
+        <main>
+            <section class="space-y-6 mb-8">
+                <h2 class="text-xl font-bold text-white section-divider">Datos del Cuestionario</h2>
+                
+                <div class="input-group flex flex-col">
+                    <label for="tituloInforme">1. Título del Informe:</label>
+                    <input type="text" id="tituloInforme" placeholder="Ej: Evaluación de la Intensificación de Ciberamenazas en el Sureste de Asia" class="input-field">
+                </div>
+                
+                <div class="input-group flex flex-col">
+                    <label for="clasificacionSeguridad">2. Clasificación de Seguridad:</label>
+                    <input type="text" id="clasificacionSeguridad" placeholder="Ej: [CLASIFICADO - CONFIDENCIAL]" class="input-field">
+                </div>
+
+                <div class="input-group flex flex-col">
+                    <label for="destinatarios">3. Destinatario(s):</label>
+                    <input type="text" id="destinatarios" placeholder="Ej: Director del Departamento de Seguridad" class="input-field">
+                </div>
+                
+                <div class="input-group flex flex-col">
+                    <label for="resumenEjecutivo">4. Resumen Ejecutivo (Key Judgement):</label>
+                    <textarea id="resumenEjecutivo" rows="4" placeholder="Ej: Nuestros análisis confirman que el grupo de hackers 'ShadowForce'..." class="input-field"></textarea>
+                </div>
+
+                <div class="input-group flex flex-col">
+                    <label for="antecedentesContexto">5. Antecedentes y Contexto:</label>
+                    <textarea id="antecedentesContexto" rows="4" placeholder="Ej: Desde la implementación de nuevas sanciones comerciales en marzo..." class="input-field"></textarea>
+                </div>
+                
+                <div class="input-group flex flex-col">
+                    <label for="hallazgos">6. Hallazgos (Cuerpo del Informe):</label>
+                    <textarea id="hallazgos" rows="6" placeholder="Organiza los hallazgos por fuente: OSINT, IMINT, GEOINT, etc." class="input-field"></textarea>
+                </div>
+
+                <div class="input-group flex flex-col">
+                    <label for="analisisRiesgos">7. Análisis y Evaluación de Riesgos:</label>
+                    <textarea id="analisisRiesgos" rows="4" placeholder="Ej: El patrón de comunicación y los objetivos sugieren que se trata de un ataque coordinado..." class="input-field"></textarea>
+                </div>
+                
+                <div class="input-group flex flex-col">
+                    <label for="implicaciones">8. Implicaciones Estratégicas y Tácticas:</label>
+                    <textarea id="implicaciones" rows="4" placeholder="Ej: Implicaciones Estratégicas: Desestabilización económica y política. Implicaciones Tácticas: Riesgo de apagones masivos..." class="input-field"></textarea>
+                </div>
+
+                <div class="input-group flex flex-col">
+                    <label for="pronosticoEscenarios">9. Pronóstico y Escenarios Futuros:</label>
+                    <textarea id="pronosticoEscenarios" rows="4" placeholder="Ej: Próximas 72 horas: Es probable que se intensifiquen las 'sondas'..." class="input-field"></textarea>
+                </div>
+                
+                <div class="input-group flex flex-col">
+                    <label for="recomendacionesAccion">10. Recomendaciones de Acción:</label>
+                    <textarea id="recomendacionesAccion" rows="4" placeholder="Prioridad Alta: Aumentar la monitorización... Prioridad Media: Lanzar una campaña de contrainteligencia..." class="input-field"></textarea>
+                </div>
+
+                <div class="input-group flex flex-col">
+                    <label for="apendices">11. Apéndices (Material de Apoyo):</label>
+                    <textarea id="apendices" rows="2" placeholder="Ej: Anexo 1: Gráfico de Flujos de Tráfico Anómalo." class="input-field"></textarea>
+                </div>
+
+                <div class="input-group flex flex-col">
+                    <label for="limitacionesAdvertencias">12. Limitaciones y Advertencias:</label>
+                    <textarea id="limitacionesAdvertencias" rows="2" placeholder="Ej: Limitación: No se ha podido verificar la identidad de los principales líderes del grupo." class="input-field"></textarea>
+                </div>
+                
+                <button id="generateReportBtn" class="btn-primary w-full py-3 px-6 rounded-lg">
+                    Generar Informe Completo
+                </button>
+            </section>
+
+            <!-- Área de Resultados del Informe -->
+            <section id="reportOutput" class="hidden">
+                <h2 class="text-xl font-bold text-white section-divider">Informe Generado</h2>
+                <div id="reportContent" class="report-section rounded-lg">
+                    <!-- El informe generado se insertará aquí -->
+                </div>
+            </section>
+            
+            <!-- Indicador de Carga -->
+            <div id="loadingIndicator" class="flex justify-center items-center h-48 hidden">
+                <div class="loading"></div>
+                <span class="text-xl ml-4 text-white">Generando informe...</span>
+            </div>
+            
+        </main>
+    </section>
+    <!-- Fin de la aplicación del generador de informes -->
+</main>
+
+<footer>
+    <img src="pie de pagina.jpg" alt="Logo o eslogan de Geoseguridad Pro">
+    <p>&copy; 2025 Asesoría en Seguridad y Defensa | Pioneros.</p>
+</footer>
+
+<script>
+    // API Configuration
+    const apiKey = "";
+    const modelUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+
+    // Utility function for exponential backoff retry logic
+    const fetchWithRetry = async (url, options, retries = 3, delay = 1000) => {
+        try {
+            const response = await fetch(url, options);
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return await response.json();
+        } catch (error) {
+            if (retries > 0) {
+                await new Promise(resolve => setTimeout(resolve, delay));
+                return fetchWithRetry(url, options, retries - 1, delay * 2);
+            }
+            throw error;
+        }
+    };
+
+    // Main function to generate the report
+    const generateReport = async () => {
+        const data = {
+            titulo: document.getElementById('tituloInforme').value,
+            clasificacion: document.getElementById('clasificacionSeguridad').value,
+            destinatarios: document.getElementById('destinatarios').value,
+            resumen: document.getElementById('resumenEjecutivo').value,
+            antecedentes: document.getElementById('antecedentesContexto').value,
+            hallazgos: document.getElementById('hallazgos').value,
+            analisis: document.getElementById('analisisRiesgos').value,
+            implicaciones: document.getElementById('implicaciones').value,
+            pronostico: document.getElementById('pronosticoEscenarios').value,
+            recomendaciones: document.getElementById('recomendacionesAccion').value,
+            apendices: document.getElementById('apendices').value,
+            limitaciones: document.getElementById('limitacionesAdvertencias').value,
+        };
+
+        const reportOutput = document.getElementById('reportOutput');
+        const reportContent = document.getElementById('reportContent');
+        const loadingIndicator = document.getElementById('loadingIndicator');
+
+        if (!data.titulo && !data.resumen) {
+            // Utiliza un cuadro de mensaje en lugar de alert()
+            const messageBox = document.createElement('div');
+            messageBox.className = 'fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-75 z-50';
+            messageBox.innerHTML = `
+                <div class="bg-gray-900 p-6 rounded-lg shadow-lg text-white max-w-sm">
+                    <p>Por favor, rellena al menos el título y el resumen para generar el informe.</p>
+                    <div class="mt-4 text-right">
+                        <button class="bg-cyan-500 text-black px-4 py-2 rounded-md" onclick="this.parentNode.parentNode.parentNode.remove()">OK</button>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(messageBox);
+            return;
+        }
+
+        reportOutput.classList.add('hidden');
+        loadingIndicator.classList.remove('hidden');
+        reportContent.innerHTML = '';
+
+        const prompt = `Actúa como un analista de inteligencia militar. Tu tarea es generar un informe de inteligencia táctica completo y profesional. Utiliza los siguientes datos para redactar cada una de las 12 secciones de manera clara, concisa y con un tono objetivo y técnico.
+
+        Asegúrate de que cada sección del informe generado esté precedida por su título correspondiente en negrita y cursiva, exactamente como se indica en la plantilla.
+
+        --- INICIO DE LOS DATOS ---
+        1. Título del Informe: ${data.titulo}
+        2. Clasificación de Seguridad: ${data.clasificacion}
+        3. Destinatario(s): ${data.destinatarios}
+        4. Resumen Ejecutivo (Key Judgement): ${data.resumen}
+        5. Antecedentes y Contexto: ${data.antecedentes}
+        6. Hallazgos (Cuerpo del Informe): ${data.hallazgos}
+        7. Análisis y Evaluación de Riesgos: ${data.analisis}
+        8. Implicaciones Estratégicas y Tácticas: ${data.implicaciones}
+        9. Pronóstico y Escenarios Futuros: ${data.pronostico}
+        10. Recomendaciones de Acción: ${data.recomendaciones}
+        11. Apéndices: ${data.apendices}
+        12. Limitaciones y Advertencias: ${data.limitaciones}
+        --- FIN DE LOS DATOS ---
+
+        Por favor, genera el informe final con todas las secciones completas.
+        `;
+
+        try {
+            const payload = {
+                contents: [{ parts: [{ text: prompt }] }],
+                generationConfig: {
+                    responseMimeType: "text/plain",
+                },
+            };
+
+            const result = await fetchWithRetry(modelUrl, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            });
+            
+            if (result.candidates && result.candidates.length > 0 &&
+                result.candidates[0].content && result.candidates[0].content.parts &&
+                result.candidates[0].content.parts.length > 0) {
+                const generatedText = result.candidates[0].content.parts[0].text;
+                reportContent.innerText = generatedText;
+                reportOutput.classList.remove('hidden');
+            } else {
+                reportContent.innerText = "Error: No se pudo generar el informe. Por favor, revisa tus datos e inténtalo de nuevo.";
+                reportOutput.classList.remove('hidden');
+            }
+        } catch (error) {
+            console.error("Error al generar el informe:", error);
+            reportContent.innerText = "Error: Ha ocurrido un fallo en la conexión con la API. Inténtalo de nuevo más tarde.";
+            reportOutput.classList.remove('hidden');
+        } finally {
+            loadingIndicator.classList.add('hidden');
+            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+        }
+    };
+
+    document.getElementById('generateReportBtn').addEventListener('click', generateReport);
+</script>
+</body>
+</html>

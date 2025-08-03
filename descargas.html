@@ -13,6 +13,46 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Estilos específicos para la página de descargas */
+        .download-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            background-color: rgba(255, 255, 255, 0.05); /* Fondo semitransparente */
+            border-radius: 0.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-item h3 {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 0.25rem;
+        }
+
+        .file-info {
+            font-size: 0.875rem;
+            color: #b0b0b0;
+        }
+
+        .download-button {
+            background-color: #22c55e; /* Tailwind 'green-500' */
+            color: #000000;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .download-button:hover {
+            background-color: #16a34a; /* Tailwind 'green-600' */
+        }
+    </style>
 </head>
 <body>
 
@@ -49,7 +89,7 @@
 
     <p class="intro-text">Revise esta sección regularmente, ya que actualizamos nuestros recursos periódicamente.</p>
     
-    <!-- Contenido original de descargas -->
+    <!-- Contenido original de descargas con el nuevo estilo -->
     <div class="download-item">
         <div>
             <h3>Informe Anual de Tendencias en Geoseguridad (2025)</h3>
@@ -69,7 +109,6 @@
     <div class="download-item">
         <div>
             <h3>Dataset: Incidentes de Ciberseguridad con Impacto Geográfico (2020-2024)</h3>
-            <p class="file-info">Formato: CSV | Tamaño: 3.5 MB | Fecha: Mayo 2025</p>
         </div>
         <a href="#" class="download-button" download>Descargar</a>
     </div>

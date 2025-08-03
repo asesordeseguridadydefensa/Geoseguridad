@@ -3,200 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manual de Geoseguridad Integral</title>
+    <title>Manual de Geoseguridad | Asesoría en Seguridad y Defensa</title>
+    <meta name="description" content="Guías prácticas y fundamentos del Manual de Geoseguridad para el análisis de riesgos, control territorial, recursos críticos y estrategias de seguridad.">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <!-- En un entorno real, los estilos se vincularían desde un archivo externo -->
+    <link rel="stylesheet" href="style.css">
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
+        /* Puedes añadir estilos específicos para esta página si es necesario */
+        /* Estilos específicos para esta página */
+        .page-content { max-width: 1000px; margin: auto; padding: 20px; background: white; margin-top: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .page-content h2 { color: #2c3e50; margin-bottom: 15px; }
+        .page-content p { line-height: 1.6; color: #333; margin-bottom: 15px; }
+        .manual-section {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        .manual-chapter-list {
+            list-style-type: none; /* Quitamos los puntos de la lista */
             padding: 0;
-            background-color: #f4f7f9;
-            color: #333;
+            margin: 20px 0;
         }
-        header {
-            background-color: #34495e;
-            color: white;
-            padding: 20px 40px;
-            text-align: center;
-            border-bottom: 5px solid #2c3e50;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        .manual-chapter-list li {
+            margin-bottom: 10px;
+            background: #eef4f7; /* Un fondo suave para cada elemento */
+            padding: 15px 20px;
+            border-left: 5px solid #34495e; /* Una barra lateral para destacar */
+            border-radius: 4px;
+            transition: background 0.3s ease;
         }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
+        .manual-chapter-list li:hover {
+            background: #e0e9ed;
         }
-        header p {
-            margin: 5px 0 0;
-            font-size: 1.2em;
-            color: #bdc3c7;
-        }
-        header img {
-            max-width: 200px;
-            height: auto;
-            margin-top: 15px;
-            border-radius: 5px;
-        }
-        nav {
-            background-color: #2c3e50;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            margin: 0 5px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        nav a:hover {
-            background-color: #3498db;
-        }
-        main {
-            max-width: 900px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-        h2 {
-            color: #34495e;
-            text-align: center;
-            margin-bottom: 30px;
-            font-size: 2em;
-        }
-        .intro-text {
-            text-align: justify;
-            line-height: 1.6;
-            margin-bottom: 40px;
-            font-size: 1.1em;
-            border-bottom: 2px solid #ecf0f1;
-            padding-bottom: 20px;
-        }
-        .chapter-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .chapter-item {
-            background-color: #f9f9f9;
-            margin-bottom: 15px;
-            padding: 20px;
-            border-left: 5px solid #3498db;
-            border-radius: 5px;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-        .chapter-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-        }
-        .chapter-item h3 {
-            margin: 0 0 10px;
-            color: #2c3e50;
-            font-size: 1.5em;
-        }
-        .chapter-item h3 a {
+        .manual-chapter-list a {
+            font-size: 1.15em;
             color: #2c3e50;
             text-decoration: none;
-            transition: color 0.2s ease;
+            font-weight: bold;
+            display: block; /* Para que todo el área del li sea clicable */
         }
-        .chapter-item h3 a:hover {
-            color: #3498db;
+        .manual-chapter-list a:hover {
+            color: #2980b9;
         }
-        .chapter-item p {
-            margin: 0;
-            line-height: 1.5;
-            color: #666;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #2c3e50;
-            color: #ecf0f1;
-            margin-top: 20px;
-        }
-        footer p {
-            margin: 0;
+        .manual-chapter-list .chapter-description {
             font-size: 0.9em;
+            color: #555;
+            margin-top: 5px;
+            line-height: 1.5;
         }
+        .manual-section h3 { color: #34495e; margin-top: 0; }
+        .manual-section p { margin-bottom: 10px; }
+        .manual-section ul { list-style-type: disc; margin-left: 20px; }
+        .manual-section li { margin-bottom: 5px; }
     </style>
 </head>
 <body>
+@@ -47,31 +68,56 @@
+    <h2>Manual de Geoseguridad</h2>
+    <p class="intro-text">El **Manual de Geoseguridad Integral** es la piedra angular de nuestra metodología de asesoría. Desarrollado con una visión proactiva, este manual profundiza en los fundamentos y el futuro de la Geoseguridad, proporcionando una guía esencial para la protección de activos territoriales críticos y la gestión estratégica de la seguridad y defensa.</p>
 
-    <header>
-        <h1>Asesoría en Seguridad y Defensa</h1>
-        <p>Pioneros</p>
-        <img src="pie de pagina.jpg" alt="Logo de Geoseguridad Pro">
-    </header>
+    <p class="intro-text">Aquí encontrará guías prácticas sobre la aplicación de la Geoseguridad en diversos contextos, desde el análisis de riesgos y el control territorial, hasta la protección de recursos críticos y el desarrollo de estrategias de seguridad adaptadas a los desafíos del siglo XXI.</p>
 
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="analisis.html">Análisis Geohistóricos</a>
-        <a href="manual.html">Manual de Geoseguridad</a>
-        <a href="herramientas.html">Herramientas de Interés</a>
-        <a href="mapas.html">Mapas Interactivos</a>
-        <a href="blog.html">Blog / Noticias</a>
-        <a href="casos.html">Casos de Estudio</a>
-        <a href="descargas.html">Descargas</a>
-        <a href="contacto.html">Contacto</a>
-    </nav>
+    <div class="manual-section">
+        <h3>1. Definición y Pilares Fundamentales de la Geoseguridad</h3>
+        <p>Explora el concepto nuclear de la Geoseguridad, su evolución terminológica y los pilares que la sostienen, integrando la geografía física y humana, la historia y la tecnología.</p>
+        <p><a href="#">Ver Capítulo</a></p>
+    </div>
 
-    <main>
-        <h2>Manual de Geoseguridad Integral</h2>
+    <div class="manual-section">
+        <h3>2. Modelo de Análisis GEO-ANALÍTICO</h3>
+        <p>Descubre nuestro ciclo de análisis de información, que abarca desde la adquisición y fusión de datos hasta la simulación y visualización de resultados, transformando la información en conocimiento accionable.</p>
+        <p><a href="#">Ver Capítulo</a></p>
+    </div>
+    <p class="intro-text">Aquí encontrará guías prácticas sobre la aplicación de la Geoseguridad en diversos contextos, desde el análisis de riesgos y el control territorial, hasta la protección de recursos críticos y el desarrollo de estrategias de seguridad adaptadas a los desafíos del siglo XXI. Explore los capítulos a continuación:</p>
 
-        <p class="intro-text">El <strong>Manual de Geoseguridad Integral</strong> es la piedra angular de nuestra metodología de asesoría. Desarrollado con una visión proactiva, este manual profundiza en los fundamentos y el futuro de la Geoseguridad, proporcionando una guía esencial para la protección de activos territoriales críticos y la gestión estratégica de la seguridad y defensa. Aquí encontrará guías prácticas sobre la aplicación de la Geoseguridad en diversos contextos, desde el análisis de riesgos y el control territorial, hasta la protección de recursos críticos y el desarrollo de estrategias de seguridad adaptadas a los desafíos del siglo XXI.</p>
-
-        <ul class="chapter-list">
-            <li class="chapter-item">
-                <h3><a href="manual-capitulo1.html">1. Definición de Geoseguridad</a></h3>
-                <p>Concepto nuclear, evolución terminológica (multilingüe) y pilares fundamentales.</p>
-            </li>
-            <li class="chapter-item">
-                <h3><a href="manual-capitulo2.html">2. Comparativa con Disciplinas Afines</a></h3>
-                <p>Geopolítica, geoestrategia, geohistoria y puntos de convergencia (SIG, cambio climático).</p>
-            </li>
-            <li class="chapter-item">
-                <h3><a href="manual-capitulo3.html">3. Pirámide de la Geoseguridad</a></h3>
-                <p>Modelo mejorado con capas integradas (Amenazas Actuales, Patrones Históricos, Geografía Física/Digital) y su aplicación práctica.</p>
-            </li>
-            <li class="chapter-item">
-                <h3><a href="manual-capitulo4.html">4. Modelo de Análisis de Información: Ciclo "GEO-ANALÍTICO"</a></h3>
-                <p>Proceso de adquisición, fusión, simulación y visualización de datos.</p>
-            </li>
-            <li class="chapter-item">
-                <h3><a href="manual-capitulo5.html">5. Casos de Aplicación</a></h3>
-                <p>Análisis de ejemplos prácticos como el Triángulo Norte, el Estrecho de Ormuz y la guerra híbrida en Ucrania.</p>
-            </li>
-            <li class="chapter-item">
-                <h3><a href="manual-capitulo6.html">6. Nuevos Conceptos y Epígrafes Sugeridos</a></h3>
-                <p>Geoseguridad climática, ciber-resiliencia territorial, geofencing ético, Digital Twins e IA predictiva.</p>
-            </li>
-            <li class="chapter-item">
-                <h3><a href="manual-capitulo7.html">7. Análisis de Libros Fundamentales</a></h3>
-                <p>Revisión de obras clave como "Geosecurity in the 21st Century" de Masys y "Cyber War and Geosecurity".</p>
-            </li>
-            <li class="chapter-item">
-                <h3><a href="manual-capitulo8.html">8. Recursos Adicionales para la Geoseguridad</a></h3>
-                <p>Bibliografía clave, fuentes abiertas relevantes y plataformas digitales para la monitorización y el análisis.</p>
-            </li>
-            <li class="chapter-item">
-                <h3><a href="manual-capitulo9.html">9. Conclusión: Hacia una Geoseguridad Adaptativa</a></h3>
-                <p>Conclusión que resume los pilares de la Geoseguridad, la necesidad de un enfoque adaptativo y las perspectivas a futuro.</p>
-            </li>
-            <li class="chapter-item">
-                <h3><a href="manual-capitulo10.html">10. Anexos Operativos</a></h3>
-                <p>Glosario multilingüe, checklist de evaluación y mapas estratégicos esenciales para la práctica profesional.</p>
-            </li>
-        </ul>
+    <div class="manual-section">
+        <h3>3. Geoseguridad Climática y Resiliencia Territorial</h3>
+        <p>Análisis de cómo el cambio climático impacta la seguridad y defensa, y estrategias para construir territorios resilientes ante fenómenos climáticos extremos y sus consecuencias.</p>
+        <p><a href="#">Ver Capítulo</a></p>
+    </div>
     </main>
+    <ul class="manual-chapter-list">
+        <li>
+            <a href="manual-capitulo1.html">1. Definición de Geoseguridad</a>
+            <p class="chapter-description">Concepto nuclear, evolución terminológica (multilingüe), pilares fundamentales.</p>
+        </li>
+        <li>
+            <a href="manual-capitulo2.html">2. Comparativa con Disciplinas Afines</a>
+            <p class="chapter-description">Geopolítica, geoestrategia, geohistoria; puntos de convergencia (SIG, cambio climático).</p>
+        </li>
+        <li>
+            <a href="manual-capitulo3.html">3. Pirámide de la Geoseguridad</a>
+            <p class="chapter-description">Modelo mejorado con capas integradas (Amenazas Actuales, Patrones Históricos, Geografía Física/Digital) y aplicación práctica.</p>
+        </li>
+        <li>
+            <a href="manual-capitulo4.html">4. Modelo de Análisis de Información: Ciclo "GEO-ANALÍTICO"</a>
+            <p class="chapter-description">Adquisición, Fusión, Simulación, Visualización.</p>
+        </li>
+        <li>
+            <a href="manual-capitulo5.html">5. Casos de Aplicación</a>
+            <p class="chapter-description">Triángulo Norte, Estrecho de Ormuz, guerra híbrida Ucrania.</p>
+        </li>
+        <li>
+            <a href="manual-capitulo6.html">6. Nuevos Conceptos y Epígrafes Sugeridos</a>
+            <p class="chapter-description">Geoseguridad climática, ciber-resiliencia territorial, geofencing ético, Digital Twins, IA predictiva.</p>
+        </li>
+        <li>
+            <a href="manual-capitulo7.html">7. Análisis de Libros Fundamentales</a>
+            <p class="chapter-description">"Geosecurity in the 21st Century" (Masys, 2023) y "Cyber War and Geosecurity" (Masys).</p>
+        </li>
+        <li>
+            <a href="manual-capitulo8.html">8. Consideraciones Éticas en Geoseguridad</a>
+            <p class="chapter-description">Privacidad, sesgos algorítmicos, uso responsable.</p>
+        </li>
+        <li>
+            <a href="manual-capitulo9.html">9. Rol de la IA en la Geoseguridad</a>
+            <p class="chapter-description">Capacidades, límites, sinergias con expertos humanos.</p>
+        </li>
+        <li>
+            <a href="manual-capitulo10.html">10. Glosario de Términos Clave</a>
+            <p class="chapter-description">Conceptos esenciales, terminología especializada.</p>
+        </li>
+    </ul>
+</main>
 
-    <footer>
-        <p>&copy; 2025 Asesoría en Seguridad y Defensa | Pioneros.</p>
-    </footer>
+<footer>
+    <img src="pie de pagina.jpg" alt="Logo o eslogan de Geoseguridad Pro">
+    <p>&copy; 2025 Asesoría en Seguridad y Defensa | Pioneros.</p>
+</footer>
 
 </body>
 </html>

@@ -4,6 +4,163 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Descargas | Asesoría en Seguridad y Defensa</title>
+    <meta name="description" content="Recursos, informes, y documentos relevantes sobre Geoseguridad, seguridad y defensa para profesionales y estudiantes.">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Carga de fuentes y estilos para toda la web -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Carga de Tailwind y Font Awesome -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Estilos generales para el fondo y la tarjeta de la aplicación */
+        .app-card {
+            background-color: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            padding: 2rem;
+            border-radius: 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilos para las tarjetas de descarga */
+        .download-card {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem;
+            background-color: rgba(31, 41, 55, 0.7);
+            border-radius: 0.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        /* Estilos para el botón de descarga */
+        .btn-download {
+            background-color: #22c55e;
+            color: #000000;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+        }
+        .btn-download:hover {
+            background-color: #16a34a;
+        }
+
+        /* Estilos para el texto */
+        .download-title {
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 1.25rem; /* Letra más grande */
+        }
+        .download-details {
+            color: #d1d5db;
+            font-size: 1rem; /* Letra más grande para los detalles */
+        }
+        .intro-text {
+            color: #d1d5db;
+            line-height: 1.75rem;
+            font-size: 1.125rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Asesoría en Seguridad y Defensa</h1>
+    <p>Pioneros</p>
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="analisis.html">Análisis Geohistóricos</a>
+    <a href="manual.html">Manual de Geoseguridad</a>
+    <a href="herramientas.html">Herramientas de Interés</a>
+    <a href="mapas.html">Mapas Interactivos</a>
+    <a href="blog.html">Blog / Noticias</a>
+    <a href="casos.html">Casos de Estudio</a>
+    <a href="descargas.html">Descargas</a>
+    <a href="contacto.html">Contacto</a>
+</nav>
+
+<main class="page-content">
+    <section class="app-card mb-8">
+        <header class="text-center mb-6">
+            <h1 class="text-3xl md:text-4xl font-bold tracking-tight text-white drop-shadow-lg">Descargas</h1>
+        </header>
+
+        <main>
+            <div class="space-y-6">
+                <p class="intro-text">
+                    Bienvenido a nuestra sección de descargas, donde ponemos a su disposición una variedad de **documentos, informes, datasets y recursos multimedia** relevantes para el ámbito de la Geoseguridad, la seguridad y la defensa.
+                </p>
+                <p class="intro-text">
+                    Estos recursos están diseñados para complementar nuestros análisis y el Manual de Geoseguridad, ofreciendo datos de interés, guías prácticas y material educativo para profesionales, estudiantes e investigadores.
+                </p>
+            </div>
+            
+            <div class="mt-8 space-y-4">
+                <!-- Tarjeta de descarga 1 -->
+                <div class="download-card">
+                    <div>
+                        <h3 class="download-title">Informe Anual de Tendencias en Geoseguridad (2025)</h3>
+                        <p class="download-details">Formato: PDF | Tamaño: 5.2 MB | Fecha: Julio 2025</p>
+                    </div>
+                    <a href="#" class="btn-download">Descargar</a>
+                </div>
+
+                <!-- Tarjeta de descarga 2 -->
+                <div class="download-card">
+                    <div>
+                        <h3 class="download-title">Guía Rápida de Herramientas OSINT para Análisis Geopolítico</h3>
+                        <p class="download-details">Formato: PDF | Tamaño: 1.8 MB | Fecha: Junio 2025</p>
+                    </div>
+                    <a href="#" class="btn-download">Descargar</a>
+                </div>
+
+                <!-- Tarjeta de descarga 3 -->
+                <div class="download-card">
+                    <div>
+                        <h3 class="download-title">Dataset: Incidentes de Ciberseguridad con Impacto Geográfico (2020-2024)</h3>
+                        <p class="download-details">Formato: CSV | Tamaño: 3.5 MB | Fecha: Mayo 2025</p>
+                    </div>
+                    <a href="#" class="btn-download">Descargar</a>
+                </div>
+
+                <!-- Tarjeta de descarga 4 -->
+                <div class="download-card">
+                    <div>
+                        <h3 class="download-title">Webinar: El Futuro de la Protección de Infraestructuras Críticas</h3>
+                        <p class="download-details">Formato: MP4 | Tamaño: 120 MB | Fecha: Abril 2025</p>
+                    </div>
+                    <a href="#" class="btn-download">Descargar</a>
+                </div>
+            </div>
+
+            <div class="mt-8">
+                <p class="intro-text">
+                    Revise esta sección regularmente, ya que actualizamos nuestros recursos periódicamente.
+                </p>
+            </div>
+        </main>
+    </section>
+</main>
+
+<footer>
+    <img src="pie de pagina.jpg" alt="Logo o eslogan de Geoseguridad Pro">
+    <p>&copy; 2025 Asesoría en Seguridad y Defensa | Pioneros.</p>
+</footer>
+
+</body>
+</html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descargas | Asesoría en Seguridad y Defensa</title>
     <meta name="description" content="Documentos, informes, datasets y recursos multimedia disponibles para descarga sobre seguridad y defensa, inteligencia y geoseguridad.">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <!-- Carga de fuentes y estilos para toda la web -->

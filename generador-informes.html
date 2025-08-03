@@ -15,8 +15,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+        /* Estilos generales para el fondo y la tarjeta de la aplicación */
         .app-card {
-            background-color: rgba(255, 255, 255, 0.05); /* Fondo semitransparente */
+            background-color: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
             padding: 2rem;
@@ -25,6 +26,7 @@
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         }
 
+        /* Estilo para el divisor de sección */
         .section-divider {
             position: relative;
             padding-bottom: 0.5rem;
@@ -39,16 +41,18 @@
             background: linear-gradient(to right, #22c55e, rgba(255, 255, 255, 0));
         }
 
+        /* Estilos para las etiquetas (label) */
         .input-group label {
-            color: #ffffff;
+            color: #ffffff; /* Texto blanco para las etiquetas */
             font-weight: bold;
             margin-bottom: 0.5rem;
         }
 
+        /* Estilos para los campos de entrada y áreas de texto */
         .input-field {
-            background-color: rgba(0, 0, 0, 0.4);
+            background-color: rgba(31, 41, 55, 0.7); /* Fondo gris oscuro semi-transparente */
             border: 1px solid rgba(255, 255, 255, 0.2);
-            color: #ffffff;
+            color: #ffffff; /* Texto blanco */
             padding: 0.75rem;
             border-radius: 0.5rem;
             transition: border-color 0.3s, box-shadow 0.3s;
@@ -59,9 +63,10 @@
             box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.5);
         }
 
+        /* Estilos para el botón principal */
         .btn-primary {
             background-color: #22c55e;
-            color: #000000;
+            color: #000000; /* Texto negro para contraste */
             font-weight: bold;
             transition: background-color 0.3s;
         }
@@ -69,14 +74,16 @@
             background-color: #16a34a;
         }
 
+        /* Estilos para la sección del informe generado */
         .report-section {
-            background-color: rgba(0, 0, 0, 0.4);
+            background-color: rgba(31, 41, 55, 0.7); /* Fondo gris oscuro semi-transparente */
             border: 1px solid rgba(255, 255, 255, 0.2);
-            color: #ffffff;
+            color: #ffffff; /* Texto blanco */
             padding: 1.5rem;
-            white-space: pre-wrap; /* Para preservar saltos de línea del informe */
+            white-space: pre-wrap;
         }
         
+        /* Estilos para el indicador de carga */
         .loading {
             width: 50px;
             height: 50px;
@@ -114,7 +121,7 @@
     <!-- Inicio de la aplicación del generador de informes -->
     <section class="app-card mb-8">
         <header class="text-center mb-6">
-            <h1 class="text-3xl md:text-4xl font-bold tracking-tight text-white">GENERADOR DE INFORMES TÁCTICOS</h1>
+            <h1 class="text-3xl md:text-4xl font-bold tracking-tight text-white drop-shadow-lg">GENERADOR DE INFORMES TÁCTICOS</h1>
             <p class="text-md text-white mt-2">Plantilla Detallada (12 Puntos)</p>
         </header>
 
